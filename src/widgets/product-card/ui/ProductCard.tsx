@@ -20,7 +20,8 @@ interface IProductCardProps {
 }
 
 export const ProductCard: React.FC<IProductCardProps> = ({ product, className }) => {
-  return (
+  console.log(product)
+    return (
     <Layout css={cardStyle} className={className}>
       <Flex justify='space-between' align='center'>
         <Title

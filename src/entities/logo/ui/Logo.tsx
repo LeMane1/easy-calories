@@ -5,10 +5,7 @@ import { Typography, Space } from 'antd';
 
 const { Title } = Typography
 
-interface ILogoProps {
-}
-
-export const Logo: React.FC<ILogoProps> = (props) => {
+export const Logo: React.FC = () => {
   return (
     <>
       <Space>

@@ -2,10 +2,7 @@ import * as React from 'react';
 import { Spin, Flex } from 'antd';
 import { css } from '@emotion/react';
 
-interface ILoaderProps {
-}
-
-export const Loader: React.FC<ILoaderProps> = (props) => {
+export const Loader: React.FC = () => {
   return (
     <>
       <Flex

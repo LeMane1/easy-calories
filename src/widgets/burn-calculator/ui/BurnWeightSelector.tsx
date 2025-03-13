@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import { css } from '@emotion/react';
 import { InputNumber, Typography } from 'antd'
 import { useAppDispatch } from 'src/app';
-import { addProduct, changeProductWeight } from '../model/computedProductsSlice';
+import { changeProductWeight } from '../model/computedProductsSlice';
 import { getTitle } from 'src/shared/lib';
 
 const { Title } = Typography

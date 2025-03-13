@@ -4,10 +4,7 @@ import { Logo } from 'src/entities/logo';
 
 const { Header: AntHeader } = Layout
 
-interface IHeaderProps {
-}
-
-export const Header: React.FC<IHeaderProps> = (props) => {
+export const Header: React.FC = () => {
   return (
     <>
       <AntHeader>

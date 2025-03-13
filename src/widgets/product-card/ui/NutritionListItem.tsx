@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { css } from '@emotion/react';
 import { Flex, List, Space, Tooltip } from 'antd';
 import type { INutritionListItem } from '../models/types';
@@ -8,7 +7,7 @@ interface INutritionListItemProps {
   listItem: INutritionListItem;
 }
 
-export const NutritionListItem: React.FC<INutritionListItemProps> = ({ listItem }) => {
+export const NutritionListItem = ({ listItem }: INutritionListItemProps) => {
   return (
     <>
       <List.Item>

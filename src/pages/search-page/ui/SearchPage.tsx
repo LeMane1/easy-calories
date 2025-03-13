@@ -11,40 +11,7 @@ import { BurnCalculator } from 'src/widgets/burn-calculator';
 
 const { useBreakpoint } = Grid
 
-interface ISearchPageProps {
-}
-
-// const test = {
-//   calories: 34,
-//   carbohydrates_total_g: 8.3,
-//   cholesterol_mg: 0,
-//   fat_saturated_g: 0,
-//   fat_total_g: 0.2,
-//   fiber_g: 3,
-//   name: "carrot",
-//   potassium_mg: 30,
-//   protein_g: 0.8,
-//   serving_size_g: 100,
-//   sodium_mg: 57,
-//   sugar_g: 3.4
-// }
-// const test1 = {
-//   calories: 34,
-//   carbohydrates_total_g: 8.3,
-//   cholesterol_mg: 0,
-//   fat_saturated_g: 0,
-//   fat_total_g: 0.2,
-//   fiber_g: 3,
-//   name: "potato",
-//   potassium_mg: 30,
-//   protein_g: 0.8,
-//   serving_size_g: 100,
-//   sodium_mg: 57,
-//   sugar_g: 3.4
-// }
-// const testData = [test, test1]
-
-export const SearchPage: React.FC<ISearchPageProps> = (props) => {
+export const SearchPage: React.FC = () => {
   const [refetch, { data, isLoading, isFetching }] = useLazyGetProductsInfoQuery({})
   const { searchQuery } = useAppSelector(state => state.searchReducer)
   const { md } = useBreakpoint()
